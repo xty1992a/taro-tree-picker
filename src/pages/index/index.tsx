@@ -136,7 +136,6 @@ export default function Index() {
   const [region, setRegion] = useState('330205')
   return (
     <View className='index'>
-
       <View className='block'>
         <View className='field'>
           <View className='field-label'>地址</View>

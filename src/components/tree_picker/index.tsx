@@ -59,7 +59,8 @@ export const TreePicker: React.FC<types.ITreePickerProps> = (props) => {
         item && onChange(item.value)
       }}
       onCancel={() => {
-        setTarget(value)
+        const item = itemsMap.get(value) || tools.firstLeaf(options)
+        setTarget(item.value)
       }}
       onColumnChange={e => {
         const {column, value: index} = e.detail
