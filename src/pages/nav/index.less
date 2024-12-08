@@ -1,0 +1,39 @@
+.banner {
+  height: 750rpx;
+  &-item {
+    height: 750rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180px;
+    color: #fff;
+  }
+}
+
+.nav-page {
+  font-size: 28px;
+}
+
+.block {
+  padding: 0 28px;
+}
+
+.comment-list{
+  display: flex;
+  flex-wrap: wrap;
+  --comment-count: 0;
+  width: calc(calc(var(--comment-count) * 55vw) - 5vw);
+  .comment-item {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-right: 5vw;
+    width: 50vw;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16rpx;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
